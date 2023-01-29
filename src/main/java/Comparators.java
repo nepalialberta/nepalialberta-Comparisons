@@ -128,6 +128,8 @@ public class Comparators {
     }
 
 
+    //Call methods functions to check comparisons 
+    
     public static void main(String[] args){
         Comparators checkV = new Comparators();
         checkV.isEqual(1, 1);
