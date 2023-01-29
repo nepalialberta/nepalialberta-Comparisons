@@ -24,7 +24,20 @@ public class Comparators {
      * @return true if a is equal to b, false otherwise.
      */
     public boolean isEqual(int a, int b){
-        return false;
+
+
+        if(a==b){
+
+            System.out.println("The value of a and b is equal");
+            return true;
+        }
+
+        else{
+            System.out.println("The value of a and b is not equal");
+            return false;
+
+        }
+        
     }
 
     /**
@@ -33,7 +46,16 @@ public class Comparators {
      * @return true if a is greater than b, false otherwise.
      */
     public boolean greaterThan(int a, int b){
-        return false;
+
+        if(a>b){
+            System.out.println("The value of a is greater than b");
+            return true;
+        }
+        else{
+            System.out.println("The value of a is greater than b");
+            return false;
+        }
+        
     }
     /**
      * @param a the first number to be compared.
@@ -41,7 +63,17 @@ public class Comparators {
      * @return true if a is less than b, false otherwise.
      */
     public boolean lessThan(int a, int b){
-        return false;
+
+        if(a<b){
+
+            System.out.println("The value of a is less than b");
+            return true;
+        }
+        else{
+            System.out.println("The value of a is not less than b");
+            return false;
+
+        }
     }
     /**
      * @param a the first number to be compared.
@@ -49,7 +81,15 @@ public class Comparators {
      * @return true if a is greater than or equal to b, false otherwise.
      */
     public boolean greaterThanOrEqualTo(int a, int b){
-        return false;
+
+        if(a>=b){
+            System.out.println("The value of a is greater than or equal to be");
+            return true;
+        }
+        else{
+            System.out.println("The value of a and b is not greater than or equal to b");
+            return false;
+        }
     }
     /**
      * @param a the first number to be compared.
@@ -57,7 +97,16 @@ public class Comparators {
      * @return true if a is less than or equal to b, false otherwise.
      */
     public boolean lessThanOrEqualTo(int a, int b){
-        return false;
+
+        if(a<=b){
+            System.out.println("The value of a is less than or equal to b");
+            return true;
+        }
+        else{
+
+            System.out.println("The value is a is less than or equal to b");
+            return false;
+        }
     }
 
     /**
@@ -66,6 +115,37 @@ public class Comparators {
      * @return true if a is not equal to b, false otherwise.
      */
     public boolean notEqualTo(int a, int b){
-        return false;
+
+        if(a!=b){
+            System.out.println(" The value of a and b are not equal");
+            return true;
+        }
+        else{
+            System.out.println(" The value of a and b are equal");
+            return false;
+        }
+        
+    }
+
+
+    public static void main(String[] args){
+        Comparators checkV = new Comparators();
+        checkV.isEqual(1, 1);
+
+        Comparators greatV = new Comparators();
+        greatV.greaterThan(1, 0);
+
+        Comparators lessCheck = new Comparators();
+        lessCheck.lessThan(1, 2);
+
+        Comparators greaterOrEqual = new Comparators();
+        greaterOrEqual.greaterThanOrEqualTo(1, 1);
+
+        Comparators lessThan = new Comparators();
+        lessThan.lessThanOrEqualTo(-1, 1);
+
+        Comparators checkEquality = new Comparators();
+        checkEquality.notEqualTo(1, 0);
+
     }
 }
